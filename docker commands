@@ -1,0 +1,36 @@
+how to see number of docker container
+  docker container ps
+  
+  how to see number of docker images
+  docker images
+  
+how to pull a docker image
+  docker container pull alpine
+  
+how to create a container for a image
+  docker container run -dt -p 802:80 alpine
+  dt means container will be runing in background and p is nothing but port  802 is host server port and 80 is coker port
+  
+  how to enter inside of a container
+  docker container exec -it rddy bash
+  
+  how to see the disk spaces 
+  docker system df
+  fot this you have come out of container 
+
+  to see list of all docker container id
+  docker container ls -aq
+
+  to start a particular container
+  docker container start and id
+
+  to start all container id at a same time
+  docker container start $(docker container ls -aq)
+
+  how to keep restart flag while creating a docker container
+  docker container run  -d --restage -unless stopped  image name
+
+  
+
+  
+  

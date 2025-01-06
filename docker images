@@ -1,0 +1,6 @@
+dockerfile:
+docker can build images automatically based on dockerfile. dockerfile is a text file which has commands to create a image. once dockerfile is created you will do docker build it will create a image.
+  copy vs add :
+  copy will help you to copy the file from your socurec to destination
+  add will also do the same thing but it has extra features like it can copy the file from url and place in the destination. it also extract the tar file and keep it in trhe destination.
+  

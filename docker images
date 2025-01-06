@@ -3,4 +3,6 @@ docker can build images automatically based on dockerfile. dockerfile is a text 
   copy vs add :
   copy will help you to copy the file from your socurec to destination
   add will also do the same thing but it has extra features like it can copy the file from url and place in the destination. it also extract the tar file and keep it in trhe destination.
-  
+  docker expose : it will help you to identify on which port container is runing.
+docker inspect container id
+helath check : this is used to check if the container is health or not by using exit code if it is 0 then it is health if is 1 then this are some errors

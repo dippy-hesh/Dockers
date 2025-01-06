@@ -30,6 +30,10 @@ how to create a container for a image
   how to keep restart flag while creating a docker container
   docker container run  -d --restage -unless stopped  image name
 
+if there any issue cache will building a image
+docker build --no-cache -t java-p .
+
+
   
 
   

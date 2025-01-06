@@ -6,3 +6,6 @@ docker can build images automatically based on dockerfile. dockerfile is a text 
   docker expose : it will help you to identify on which port container is runing.
 docker inspect container id
 helath check : this is used to check if the container is health or not by using exit code if it is 0 then it is health if is 1 then this are some errors
+root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage# cat Dockerfile
+FROM ubuntu
+HEALTHCHECK --interval=5s CMD ping -c 1 172.17.0.2

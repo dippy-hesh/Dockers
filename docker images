@@ -9,3 +9,47 @@ helath check : this is used to check if the container is health or not by using 
 root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage# cat Dockerfile
 FROM ubuntu
 HEALTHCHECK --interval=5s CMD ping -c 1 172.17.0.2
+
+entry point: it sets as the main command and it cannot be override
+wWORKDIR: this will you to set your working directory
+FROM ubuntu
+RUN mkdir -p /root/create
+WORKDIR /root/create
+RUN touch main.tf
+CMD ["bash"]
+workdir code  
+Dockerfile - Demo Code 1:
+
+FROM busybox
+RUN mkdir -p /root/demo
+WORKDIR /root/demo
+RUN touch file01.txt
+CMD ["/bin/sh"]
+Demo Code 2:
+
+FROM busybox
+RUN mkdir -p /root/demo/context1/context2
+WORKDIR /root/demo
+WORKDIR context1
+WORKDIR context2
+RUN touch file01.txt
+CMD ["/bin/sh"]
+
+
+ENV : it set in key and value along with that you can do it in cli as well by using --env
+FROM ubuntu
+ENV FILE dippy
+RUN touch $FILE.txt
+CMD ["bash"]
+
+using cli  :  docker container run -dt --name enovern --env USER=MAHE ubuntu bash
+
+tagging docker images: nothing but giving a meaningfull name for you images , there are 2 different ways doing it
+docker build -t name.v2 .   here -t is tagging we are giving name like name.v2 name for image
+if you want name a image which dont have name use docker tag 657106eb2b5e name.cool     657106eb2b5e is docker image
+if want to create ailas for a existing images : docker tag no_monitor:latest dont_monitor    no_monitor:latest mean existing image:tage
+
+docker commit: when we create a container and made changes and wants to commit changes in the container so that it save and create a new image
+docker container commit new_container new_modifed_image   once we made changes in container you can commit is done to create a new image 
+you will be able to change the cmd in the container using commit 
+docker container commit --change="CMD ["sh"]" intelligent_nightingale

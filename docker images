@@ -55,3 +55,6 @@ you will be able to change the cmd in the container using commit
 docker container commit --change="CMD ["sh"]" intelligent_nightingale
 docker image to keep you images less size try to decreas your layer by using &&
 docker inspect: docker image inspect new_image --format="{{.Os}}"
+
+image puring : image without any tag and no container puring only delete the unused images
+docker image prune -a

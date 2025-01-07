@@ -36,6 +36,13 @@ docker build --no-cache -t java-p .
 how to remove all the docker images
 docker rmi $(docker images -aq)
 
+docker images inspect for certain values like os or host etc
+docker image inspect new_image --format="{{.Os}}"
+another way
+docker image inspect imagename|grep hostname this will show you host name
+
+
+
 
 
   

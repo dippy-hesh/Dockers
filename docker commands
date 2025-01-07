@@ -33,6 +33,10 @@ how to create a container for a image
 if there any issue cache will building a image
 docker build --no-cache -t java-p .
 
+how to remove all the docker images
+docker rmi $(docker images -aq)
+
+
 
   
 

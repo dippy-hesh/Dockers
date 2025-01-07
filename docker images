@@ -53,3 +53,5 @@ docker commit: when we create a container and made changes and wants to commit c
 docker container commit new_container new_modifed_image   once we made changes in container you can commit is done to create a new image 
 you will be able to change the cmd in the container using commit 
 docker container commit --change="CMD ["sh"]" intelligent_nightingale
+docker image to keep you images less size try to decreas your layer by using &&
+docker inspect: docker image inspect new_image --format="{{.Os}}"

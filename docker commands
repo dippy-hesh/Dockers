@@ -41,6 +41,8 @@ docker image inspect new_image --format="{{.Os}}"
 another way
 docker image inspect imagename|grep hostname this will show you host name
 
+prune command will delete image which has no tags and no container and it not being used.
+docker image prune -a
 
 
 

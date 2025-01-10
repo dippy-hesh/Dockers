@@ -45,6 +45,10 @@ prune command will delete image which has no tags and no container and it not be
 docker image prune -a
 
 
+what are the commands we execute on this image
+docker image history new_image
+
+
 
 
   

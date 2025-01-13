@@ -1,0 +1,3 @@
+by default docker can make connection to outside world but outside world cannot make connection to docker . if you want to accept the
+connection from outside world you have to bind it to host port
+-p means port   0.0.0.0:130->81   130 is port of the host and 80 is port of my container.

@@ -1,0 +1,10 @@
+by default docker container never start when they exit or docker demon restarts.
+docker provides restart policy to control whenever docker exit or restart.
+there are 4 ways to restart
+
+no do not automatically start the container
+on failure  restart the container if it failed due to an error no exit code 0
+unless-stopped this is mostly used in porducation docker itself stopped or restarted restart the container unless it is stopped
+always  always start the container if it is stopped 
+
+docker container run -d --restart unless-stopped  dockerimage

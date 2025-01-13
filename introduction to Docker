@@ -1,1 +1,8 @@
-
+docker is open platform once you build it can be run anywhere 
+generally there involve 2 steps in docker steps1 you have to download or pull or create the image which you want to run in your operating system
+next we have to start the container. 
+the code written by software devloper will be odstarted into packages and this pakage will be converted in to images from them we can start a lightweight machines
+vms are heavy weight machine you have to install complete os. on top of hardware you have to install hyperverser on top of it you have
+to install vm and you have install os as well when you run it it will run the code perfectly but it wont run in another vm because 
+it may use linux or mac or windows. 
+if you install docker engine on you machine like vms or laptop  on top of this docker engine we will run docker container.

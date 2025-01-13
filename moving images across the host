@@ -1,0 +1,19 @@
+first is we have to save the image to .tar file
+
+docker save busybox > busybox.tar
+once it is done we can send this tar over then pen drive or mail
+after that docker load > busybox.tar
+
+
+code:
+Base Dockerfile
+
+FROM busybox
+RUN touch custom.txt
+CMD ["/bin/sh"]
+docker build -t myapp .
+
+Save and Load Images
+
+docker save myapp > myapp.tar
+docker load < myapp.tar

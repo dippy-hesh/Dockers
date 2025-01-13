@@ -17,3 +17,10 @@ how to pull docker image
 ---------------------------------------------------------------------------------------------------------------------------
     how to create a docker container from existing image
     docker container run -dt -p 123:80 httpd
+-------------------------------------------------------------------------------------------------------------------------
+if you want to give name for your docker container use (--name and name for the container )
+ docker run --name hi -d -p 86:169 httpd
+------------------------------------------------------------------------------------------------------------------------
+how to stop the container
+docker stop containerid or container name
+----------------------------------------------------------------------------------------------------------------------

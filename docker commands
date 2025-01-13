@@ -1,0 +1,19 @@
+how to docker images we have 
+  docker images 
+  root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder/doc# docker images
+REPOSITORY           TAG       IMAGE ID       CREATED       SIZE
+with-cache           latest    fbca0b197d5f   4 hours ago   124MB
+without-cache        latest    fbca0b197d5f   4 hours ago   124MB
+ --------------------------------------------------------------------------------------------------------------------------
+    how to check docker container we have 
+    docker ps
+    root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder/doc# docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS       PORTS     NAMES
+e5c2392eb2a5   myngnix        "nginx -g 'daemon of…"   5 hours ago   Up 5 hours   80/tcp    dippy
+b99abdd190a9   1679bdea19f2   "bash"                   2 days ago    Up 2 days              venkat
+    ----------------------------------------------------------------------------------------------------------------------
+how to pull docker image 
+    docker pull httpd
+---------------------------------------------------------------------------------------------------------------------------
+    how to create a docker container from existing image
+    docker container run -dt -p 123:80 httpd

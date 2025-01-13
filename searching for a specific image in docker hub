@@ -1,0 +1,11 @@
+docker search imagename
+if you want to search like top 6 images
+docker search image --limit 6
+root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder# docker search ngnix --limit 6
+NAME                DESCRIPTION   STARS     OFFICIAL
+userxy2015/ngnix    ngnix         18
+theburi/ngnix       ngnix         0
+ssvreddy/ngnix                    0
+alamalhoda/ngnix                  0
+bharath2012/ngnix                 0
+accuknoxns/ngnix                  0

@@ -11,3 +11,4 @@ venkatreddy59/demo   latest    9c4134005296   13 minutes ago   131MB
 myngnix              latest    d17fd123aab4   2 days ago       131MB
 mynginx_1            latest    1679bdea19f2   2 days ago       131MB
 root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder# docker push venkatreddy59/demo
+you can logout by using docker logout

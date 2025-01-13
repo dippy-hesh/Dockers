@@ -36,3 +36,5 @@ docker container rm container id or container name
 if you want to enter inside the docker
 docker container exec -it dockercontainername or containerid  bash
 --------------------------------------------------------------------------------------------------------------------------
+how to apply restart policy for docker container
+docker container run -d --restart unless-stopped  dockerimage

@@ -1,0 +1,13 @@
+first we need authentication to push to any repo like docker hub and aws ecr
+
+docker login and then give password
+docker tag mounika venkatreddy59/demo:latest
+mounika is the image which you created  venkatreddy59 is uername   demo:latest is the name which are giving to that image
+root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder# docker tag mounika venkatreddy59/demo:latest
+root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder# docker images
+REPOSITORY           TAG       IMAGE ID       CREATED          SIZE
+mounika              latest    9c4134005296   13 minutes ago   131MB
+venkatreddy59/demo   latest    9c4134005296   13 minutes ago   131MB
+myngnix              latest    d17fd123aab4   2 days ago       131MB
+mynginx_1            latest    1679bdea19f2   2 days ago       131MB
+root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder# docker push venkatreddy59/demo

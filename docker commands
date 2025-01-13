@@ -24,3 +24,15 @@ if you want to give name for your docker container use (--name and name for the 
 how to stop the container
 docker stop containerid or container name
 ----------------------------------------------------------------------------------------------------------------------
+this will give the list docker container run and existed state 
+docker ps -a
+------------------------------------------------------------------------------------------------------------------------
+if you want to stop all container at once
+docker container stop $(docker container ls -aq)
+-------------------------------------------------------------------------------------------------------------------------
+how to remove a docker container
+docker container rm container id or container name
+-------------------------------------------------------------------------------------------------------------------------
+if you want to enter inside the docker
+docker container exec -it dockercontainername or containerid  bash
+--------------------------------------------------------------------------------------------------------------------------

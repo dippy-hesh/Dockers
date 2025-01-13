@@ -1,0 +1,5 @@
+images layer is nothing but writting the code in layer by layer which will increase the size of images to reduce it this we have to import and export the container to recude its size
+docker container run -dt --name mounika myngnix
+docker export mounika > mounika.tar
+cat mounika.tar | docker import - mounika:latest
+

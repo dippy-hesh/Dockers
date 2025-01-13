@@ -1,0 +1,4 @@
+image is a critical componet to run the container. this image is read only template it has necessary application binary and dependencies.
+this images ever run to make it run we have to create a container. once you inside the container there will be writeable layer where you write your extra code
+writeable layer only work during the container active if you restart the container data will be lost to you avioud this data lose we use docker volume
+temparary data will be stored in writeable layer 

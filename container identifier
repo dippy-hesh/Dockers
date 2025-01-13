@@ -1,0 +1,11 @@
+when you create a container will be assigned a uuid know as unique identifier
+root@LAPTOP-UPM3NV8E:/home/dippy/Dockerimage/httpd/working/new_folder/doc# docker run -d -p 86:169 httpd
+fe0407c87d92ec24d708509f39e9364c0cdab10870b40543ad3f77c8b2352f9a
+uuid is used to identify the docker container
+this uuid are very big hard to identify so we created container name
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS
+   NAMES
+fe0407c87d92   httpd          "httpd-foreground"       7 minutes ago    Up 7 minutes    80/tcp, 0.0.0.0:86->169/tcp, [::]:86->169/tcp   gifted_babbage
+  by default if we dont give any name then docker will create a name for our container. it will create a randomly genrated name by _
+  you can add your own name by using --name
+  docker run --name hi -d -p 86:169 httpd

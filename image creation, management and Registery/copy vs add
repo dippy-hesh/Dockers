@@ -1,0 +1,13 @@
+both will server similar function.
+copy and add will copy the files to specific location.
+copy will take in source to destination it will take file form local or directory from host 
+add it can also fetch the file from url and copy to the container and you extract a tra file from source to destenation.
+  you have compress file and you want to decompress it and keep it in destination you will use ADD
+  
+code:
+FROM ubuntu
+RUN mkdir -p cool
+WORKDIR cool
+COPY creat.txt /cool
+ADD ok.tar.gz /cool
+CMD ["bash"]

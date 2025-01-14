@@ -1,0 +1,15 @@
+expose will inform the docker to listen on which port which is indicate with -p
+this below code means container is listening on port 9807.
+
+ 0.0.0.0:129->80/tcp   hostport 129 and container port 80
+ the traffic which are on hostport will be redirect to container port 80
+
+
+code
+FROM ubuntu
+RUN apt-get update
+EXPOSE 9807
+CMD ["bash"]
+
+another way to assign port
+docker container run -dt -p 80:80 imagename bash

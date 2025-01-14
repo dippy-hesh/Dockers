@@ -49,3 +49,7 @@ docker system df -v
 --------------------------------------------------------------------------------------------------------------------------
 delete the job automatically once action is performed in below command it will ping 10 times google and delete the job
 docker container run -dt -rm --name vkdnd busybox ping-c10 google
+--------------------------------------------------------------------------------------------------------------------------
+to build a image
+docker build -t newimagename .                . is the path where the dockerfile is present
+----------------------------------------------------------------------------------------------------------------------------

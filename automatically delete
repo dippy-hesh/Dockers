@@ -1,0 +1,4 @@
+container are created to perform a specific action we need to to delete them once the job is completed
+otherwise it will increase the space
+
+docker container run -dt -rm --name vkdnd busybox ping-c10 google

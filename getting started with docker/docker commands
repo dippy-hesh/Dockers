@@ -59,4 +59,6 @@ docker container run -dt -p 80:80 imagename bash
 how to delete a docker image
 docker rmi imagename or imageid
 ----------------------------------------------------------------------------------------------------------------------------
-
+how to name the image when we forgot to give a name while creating them
+docker tag imeageid name
+---------------------------------------------------------------------------------------------------------------------------

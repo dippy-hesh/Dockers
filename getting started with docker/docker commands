@@ -53,3 +53,7 @@ docker container run -dt -rm --name vkdnd busybox ping-c10 google
 to build a image
 docker build -t newimagename .                . is the path where the dockerfile is present
 ----------------------------------------------------------------------------------------------------------------------------
+to assign port for container
+docker container run -dt -p 80:80 imagename bash
+---------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,12 @@
+health check is used to check if your application is runing without any issues or not.
+  first you need to create a container and get its ip address
+create container : docker container run -dt --name po newport bash
+get the ipaddress of that container
+docker inspect po
+create a dockerfile
+FROM ubuntu
+HEALTHCHECK --interval=5s CMD ping -c 1 172.17.0.11
+  again create a container with the image which we created now
+and do docker ps
+  another way:
+docker container run -dt --name tmp --health-cmd "curl -f http//localhost" ubuntu bash

@@ -1,0 +1,11 @@
+tagging is nothing but  giving name to a image or container if we forgot will creating it
+if we forgot to give a name to a image while building it then in REPOSITORY it will show as none like below
+
+<none>               <none>    86fa2e4b3c32   8 weeks ago    78.1MB
+
+to give name for it we use tag
+
+docker tag imeageid name
+docker tag 86fa2e4b3c32 royal
+
+royal                latest    86fa2e4b3c32   8 weeks ago    78.1MB

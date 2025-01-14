@@ -38,3 +38,13 @@ docker container exec -it dockercontainername or containerid  bash
 --------------------------------------------------------------------------------------------------------------------------
 how to apply restart policy for docker container
 docker container run -d --restart unless-stopped  dockerimage
+-------------------------------------------------------------------------------------------------------------------------
+docker disk space
+for overall like container volume image
+docker system df
+----------------------------------------------------------------------------------------------------------------------
+docker diskspace
+to check space for each containerwise
+docker system df -v
+--------------------------------------------------------------------------------------------------------------------------
+

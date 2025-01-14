@@ -1,0 +1,22 @@
+each docker container is build based on images. docker images are build based upon reading instrucations  from  dockfiles.
+dockerfile is a text document that contain all the commands specify by user to make a image. to build a image you require a dockerfile.
+once you create a dockerfile you have to execute build command to create a image
+docker buils -t specify a name for your docker image and path where your file is present
+docker build -t imagename .
+
+
+formate of dockerfile
+# comment   
+instrucation argument
+docker file must start FROM instrucation
+from is nothing but from where you want to build from like centos ubuntu etc
+
+we have alot of instrucations like FROM RUN CMD ADD COPY USER ENTRYPOINT VOLUME ENV etc
+
+
+code to create a simple dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y nginx
+COPY index.nginx-debian.html /var/www/html
+CMD nginx -g 'daemon off;'

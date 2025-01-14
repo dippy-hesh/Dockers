@@ -56,4 +56,7 @@ docker build -t newimagename .                . is the path where the dockerfile
 to assign port for container
 docker container run -dt -p 80:80 imagename bash
 ---------------------------------------------------------------------------------------------------------------------------
+how to delete a docker image
+docker rmi imagename or imageid
+----------------------------------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,12 @@
+entrypoint will act as a main command 
+cmd will exit when it purpose is complete but entrypoint will stay
+
+workdir will ste working directory for any run cmd entrypoint command in dockerfile
+workdir is like pwd it will kep you in that dir if you specify it
+
+code:
+FROM ubuntu
+RUN mkidir -p king
+WORKDIR /king
+RUN touch kill.txt
+CMD ["bash"]

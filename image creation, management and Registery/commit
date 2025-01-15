@@ -1,0 +1,7 @@
+if you have a runing container and you modified a lot of changes and you want to make a image from it then you can use commit option.
+
+  syntax: docker container commit container_id newimagename
+
+along with that by using commit we can also modify CMD and ENV also
+
+docker container commit --change 'CMD ["ash"]' containername 

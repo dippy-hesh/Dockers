@@ -4,3 +4,15 @@ docker save port > port.tar
 
 then do load
 docker load < port.tar
+
+code:
+
+FROM busybox
+RUN touch custom.txt
+CMD ["/bin/sh"]
+docker build -t myapp .
+
+Save and Load Images
+
+docker save myapp > myapp.tar
+docker load < myapp.tar

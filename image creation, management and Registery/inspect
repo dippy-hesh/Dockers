@@ -1,0 +1,12 @@
+docker images contians alot of information like
+os
+env
+hostname
+create date
+command
+size
+docker image inspect command will allow  view all this details assoicated by docker image.
+docker inspect imgename
+
+if you want to inspect particular value
+docker image inspect httpd|grep Hostname

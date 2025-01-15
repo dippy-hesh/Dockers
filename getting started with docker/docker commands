@@ -62,3 +62,10 @@ docker rmi imagename or imageid
 how to name the image when we forgot to give a name while creating them
 docker tag imeageid name
 ---------------------------------------------------------------------------------------------------------------------------
+how to commit a runing container and create a new image
+docker container commit container_id newimagename
+-------------------------------------------------------------------------------------------------------------------------
+how to modify container cmd and env using commit
+docker container commit --change 'CMD ["SHH"]' containerid
+-----------------------------------------------------------------------------------------------------------------------
+

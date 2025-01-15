@@ -64,6 +64,13 @@ docker tag imeageid name
 ---------------------------------------------------------------------------------------------------------------------------
 how to commit a runing container and create a new image
 docker container commit container_id newimagename
+----------------------------------------------------------------------------------------------------------------------------
+how to inspect or to idneitfy a particular value in image
+docker image inspect httpd|grep Hostname
+-----------------------------------------------------------------------------------------------------------------------------
+how to inspect a image
+docker inspect imageid or image name
+---------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------
 how to modify container cmd and env using commit
 docker container commit --change 'CMD ["SHH"]' containerid

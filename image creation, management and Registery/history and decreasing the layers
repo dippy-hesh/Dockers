@@ -1,0 +1,10 @@
+history command will show the what are the command we write in a image
+
+docker image history dockerimeageid or name
+
+if we wnt to reduce the size of a docker image we have reduce the layer 
+first we have to export the existing container to tar
+
+docker export my_ubuntu > my_ubunut.tar
+  after that we have to import it
+cat  my_ubunut.tar| docker import - myubu

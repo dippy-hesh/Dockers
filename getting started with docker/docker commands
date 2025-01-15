@@ -89,4 +89,12 @@ docker image prune
 this will delete image which has no container attached to it
 docker image prune-a
 -----------------------------------------------------------------------------------------------------------------------------
+how to push a image to docker hub
+docker push tag ubuntu:latest  venkat/mubunut                                 venkat is username of my username
+-----------------------------------------------------------------------------------------------------------------------------
+moveing images across host
+docker save port > port.tar
+then do load
+docker load < port.tar
+----------------------------------------------------------------------------------------------------------------------------
 

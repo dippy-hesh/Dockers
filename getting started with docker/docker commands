@@ -83,3 +83,10 @@ docker image inspect httpd --format='{{.Layers}}'
 or 
 docker image inspect containerid| grep layers
 ---------------------------------------------------------------------------------------------------------------------------
+this will delete the images which dont have tags
+docker image prune 
+----------------------------------------------------------------------------------------------------------------------------
+this will delete image which has no container attached to it
+docker image prune-a
+-----------------------------------------------------------------------------------------------------------------------------
+

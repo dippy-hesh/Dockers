@@ -97,4 +97,9 @@ docker save port > port.tar
 then do load
 docker load < port.tar
 ----------------------------------------------------------------------------------------------------------------------------
-
+how to create a container in any newtwork drive
+docker container run -dt --name pig --network host royal       host is network name royal is imagename 
+------------------------------------------------------------------------------------------------------------------------
+how to check how many newqork drive we have
+docker network ls
+-------------------------------------------------------------------------------------------------------------------

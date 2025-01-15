@@ -1,1 +1,18 @@
+network is nothing but interconnection between 2 devices like computers mobiles printer etc.
+when you install a docker in your host by default some drivers will be installed if you want to see the drive use below commands.
+docker network ls 
+you can  create a container in any network as you like using below command
+docker container run -dt --name pig --network host royal       host is network name royal is imagename 
 
+
+there are several networking drives 
+bridge
+host
+overlaop
+null
+maclvan
+
+if you create a ny container by default it will create on bridge network. bridgr network has 172.17.0.0/16 of ips .
+if you want to inspect bridge netwrok docker inspect bridge 
+
+  

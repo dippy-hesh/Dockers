@@ -12,7 +12,12 @@ overlaop
 null
 maclvan
 
-if you create a ny container by default it will create on bridge network. bridgr network has 172.17.0.0/16 of ips .
-if you want to inspect bridge netwrok docker inspect bridge 
+overview of bridge network:
+if you create a ny container by default it will create on bridge network. bridge network has 172.17.0.0/16 of ips .
+it allow container using same netwrok to communicate and also isolate from the container which are not connected to same bridge network
+containwe which want to access the internet has to to coneect to gatway and gatway will connect to iptables nat connect to etho
+this etho has the internet 
+if you want to inspect bridge netwrok 
+docker inspect bridge 
 
   

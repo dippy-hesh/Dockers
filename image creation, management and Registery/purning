@@ -1,0 +1,6 @@
+docker image prune command allow us to dlete the unsaved images and image not refered to any container
+danging images are nothing but images which dont have tags and not used by any container
+
+
+docker image prune  -this will delete the images which dont have tags
+docker image prune-a - this will delete image which has no container attached to it

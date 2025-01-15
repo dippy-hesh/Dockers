@@ -10,3 +10,6 @@ docker inspect imgename
 
 if you want to inspect particular value
 docker image inspect httpd|grep Hostname
+
+we can also use
+docker image inspect httpd --format='{{.Layers}}'

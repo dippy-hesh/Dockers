@@ -1,0 +1,6 @@
+first we have save the existing image to tar
+docker save port > port.tar
+
+
+then do load
+docker load < port.tar

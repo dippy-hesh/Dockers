@@ -1,0 +1,10 @@
+docker tag ubuntu:latest localhost:8000/myubu
+
+localhost:800  is the dns name 
+
+docker push localhost:8000/myubu
+
+
+if you want to push to dcoker hub
+docker login
+docker push tage venkat/mubunut

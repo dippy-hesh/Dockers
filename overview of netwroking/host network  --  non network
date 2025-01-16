@@ -9,3 +9,4 @@ docker container run -dt --name raju --network host ubuntu bash
 
 none network:
 if you want to disable network to you container then we use none network it complete isolated container. this container dont have any ips
+docker network create --driver bridge long

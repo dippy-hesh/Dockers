@@ -1,3 +1,9 @@
 by default docker can make connection to outside world but outside world cannot make connection to docker . if you want to accept the
 connection from outside world you have to bind it to host port
 -p means port   0.0.0.0:130->81   130 is port of the host and 80 is port of my container.
+
+
+if we have -P option it will assigned port for us so that no need to mention ports.
+docker contain run -dt --name venkat_worst -P imageid bash
+
+-P captail p 

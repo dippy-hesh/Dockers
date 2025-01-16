@@ -1,0 +1,7 @@
+how to link multiple container so that they communicate each other
+docker container run -dt --link container01:container --name ping ubuntu bash
+
+container01:container
+container01 is the another container you want to link 
+container is alias name for container01
+--name ping is your new docker name

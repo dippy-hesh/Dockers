@@ -1,0 +1,11 @@
+it will use host network directly. in bridge network and user defined network container has it own ip but in host network it
+uses host ip. 
+
+
+docker container run -dt --name raju --network host ubuntu bash
+
+
+
+
+none network:
+if you want to disable network to you container then we use none network it complete isolated container. this container dont have any ips

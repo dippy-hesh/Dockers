@@ -1,1 +1,16 @@
+once you build your container in different host machine how do you scale them up and dowm based on traffic this is done by using 
+orchestration tool called kubernets. 
 
+node is machine or vm where kubernets is installed in nide we have container node is also called as worker machine .
+we should have more than 1 node a group od nodes are called as cluster. we have master node which will montor the node and 
+distrubute the load amoung the workers nodes.
+when you install kubernets in you machine then your installing following compnents in your machine.
+api server--- it is font end for kubernets devices user cli will talk to this api server
+etcd -- this store all the data realted to cluster 
+scheduler -- it distrube the load between the nodes
+controller -- it will montior the node if they go down it will bring new containers nodes or endpoints
+coniner runtime -- this will run the container
+kublet-- it is gent it make sure container are runing in node
+
+worker node contains kubctl agent which communicate with master server and container runtime
+master node contains scheduler etcd controller api server

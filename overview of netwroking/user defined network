@@ -1,1 +1,11 @@
 you can create your own user defined bridge network which look simillar to bridge newt work
+if you want to create your own bridge
+
+docker network create --drive mydrive bridge
+mydrive is the name of the bridge.
+
+in user defined if you want to communicate from 1 container to another you no need to specify container ip dns name will be fine
+dns name is nothing but docker container name
+
+in bridge ping 182.18.0.0
+in user defined bridge ping container name

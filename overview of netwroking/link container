@@ -5,3 +5,7 @@ container01:container
 container01 is the another container you want to link 
 container is alias name for container01
 --name ping is your new docker name
+
+
+
+this link is old approch 

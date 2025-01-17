@@ -1,0 +1,20 @@
+key value pair in this value should have space after :
+meat: mutton
+fruit: lemon
+
+array and elemnet
+fruits:
+- mango
+- apple
+- orange
+
+dictinory    step of property grouped together to ran a item .    note items should have epual space they can be unordered 
+banana:
+   fat: 10gms
+   cal: 36
+mango:
+  fat: 10gms
+   cal: 36
+
+   
+

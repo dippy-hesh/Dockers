@@ -1,0 +1,3 @@
+pod is smallest object you create in kubernets container placed inside this pods. we can have multiple application in same pod
+unless they are different application.  differnt container can be place in same pod. when a container is created a helper container will be created too
+if container dies helper also dies. 

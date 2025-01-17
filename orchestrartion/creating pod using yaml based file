@@ -1,0 +1,25 @@
+kubernets use yaml for creating pods deployment much more.
+  in kubernets yaml based deployment you shoud have this 4 objects
+  apiversion:  what kind of api we want to create
+  kind:   what kind of pod service deployment replicaset 
+  metadata:  data about the object like its name and label etc
+  spec:is nothing but specififcation like container and image
+
+  kind              apiversion
+  pod                v1
+  service            v1   
+  replicaset        apps/v1
+  deployment         apps/v1
+
+  code:
+  apiVersion: v1
+kind: Pod
+metadata:
+  name: ngnix
+  labels:
+    apps: ngnix
+    tier: frontend
+spec:
+  containers:
+   - name: ngnix
+     image: ngnix

@@ -1,3 +1,10 @@
 pod is smallest object you create in kubernets container placed inside this pods. we can have multiple application in same pod
 unless they are different application.  differnt container can be place in same pod. when a container is created a helper container will be created too
 if container dies helper also dies. 
+
+pod is a place where image is created inside it
+kubectl run cool --image nginx ---- cool is the name of the pod and ngnix is the image
+to check the status we use command kubectl get pods
+kubectl describe pod man     give more info about your pod  we can also ip of the node and ip of pod as well
+kubectl get pods -o wide this command also give you more info about the pods
+

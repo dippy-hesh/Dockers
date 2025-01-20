@@ -1,0 +1,25 @@
+how to check number of pods
+kubectl get pods
+
+how to create a pod
+kubectl run name --image=httpd
+name is the name of the pod
+
+how to see what is the image used inside pod and hostname details
+kubectl describe pod podname
+
+you can also wee on which node it is runing by
+ kubectl get pods -o wide
+
+how to see how any number of containres in pod
+ubuntu1   1/1     Running            0               7m12s   10.244.0.9   minikube   <none>           <none>
+1/1  second is container and first 1 is runing container
+
+how to delete a pods
+kubectl delete pods podname
+
+creating a pod using yaml file
+kubectl run king --image=ubuntu --dry-run=client -o yaml
+
+
+

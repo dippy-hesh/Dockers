@@ -20,6 +20,13 @@ kubectl delete pods podname
 
 creating a pod using yaml file
 kubectl run king --image=ubuntu --dry-run=client -o yaml
+next redirect to  kubectl run king --image=ubuntu --dry-run=client -o yaml > new.yaml
+kubectl create -f new.yaml
+
+if you make any changes in yaml file
+you have to apply the changes by using
+kubectl apply -f and yaml filename
+
 
 
 

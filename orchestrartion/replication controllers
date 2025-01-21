@@ -1,2 +1,46 @@
 we can scale up our pods by using this replication controller. it can be used in multiple nodes as well.
 how to create replication 
+
+replicaset requires  aipversion kind metadata spec inside spec we need templete replica and selectors
+
+if you want to increase the replica we need to edit the file and change to 6 and run below command
+kubectle replace -f filename
+
+
+to create a replicat
+kubectl create -f filename
+
+to see how many replica we have 
+kubctl get replicaset
+
+to delete a replica set
+kubectl delete replicaset filename
+
+to change the replica without editing file
+kubectle scale --replicas=6 -f filename
+kubectl scale replicaset fs-myreplica --replica=4
+
+
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name:  fs-myreplica
+  labels:
+    app: fs
+    type: backend
+spec:
+   selector:
+     matchLabels:
+        type: backend
+   replicas: 2
+   template:
+     metadata:
+        name: myname
+        labels:
+          app: fs
+          type: backend
+     spec:
+       containers:
+         - name: nginx
+           image: nginx

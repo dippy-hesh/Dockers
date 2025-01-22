@@ -8,3 +8,5 @@ to check the status we use command kubectl get pods
 kubectl describe pod man     give more info about your pod  we can also ip of the node and ip of pod as well
 kubectl get pods -o wide this command also give you more info about the pods
 
+kubectl create deployment maimia --image=postsql --replicas=2
+above command to create a deployment with rep;icaset 

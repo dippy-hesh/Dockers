@@ -8,5 +8,12 @@ how to delete a pod
 kubectl delete pod nutakki
 
 
+creating deployment and checking its status and history and undoing the changes
+kubectl create -f deployment.yml
+kubectl get deployment
+kubectl apply -f deploymt.yml
+kubectl rollout status deployment/my-deployment
+kubectl rollout history deployment/my-deplyment 
+kubectl rollout undo deployment/my-deplyment
   
 

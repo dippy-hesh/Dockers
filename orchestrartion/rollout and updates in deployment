@@ -3,3 +3,22 @@ roolback: if something goes wrong during deployment you want to revert to old ve
 when you deploy a new application this is revision 1
 when there are new featured avaiable and you update the application then new rollout will be taking place and it is revision 2
 this rollout and revision will help you to keep track of changes we made and this will help us to keep track
+there are 2 stratergy 
+1 recreate where we take down all pods at a time and create new pods draw back is application wont be avaiable untill you create a new 
+pods
+2 rooling update : by default kubernets use this stratergy because it will take down 1 pod at a time and create a new pod.
+updating your deployment means if we have change your existing labs or apps or version of your image once update is done in the file
+
+first create a deployment by using yml file once code is placed in yml create a deployment
+kubectl create -f deployment.yml
+kubectl get deployment
+kubectl apply -f deploymt.yml
+kubectl rollout status deployment/my-deployment
+kubectl rollout history deployment/my-deplyment 
+kubectl rollout undo deployment/my-deplyment
+
+
+
+
+
+

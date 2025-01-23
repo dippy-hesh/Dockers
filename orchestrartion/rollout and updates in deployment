@@ -1,0 +1,5 @@
+roolout: deploying a application in kubernets
+roolback: if something goes wrong during deployment you want to revert to old version this is called rool back
+when you deploy a new application this is revision 1
+when there are new featured avaiable and you update the application then new rollout will be taking place and it is revision 2
+this rollout and revision will help you to keep track of changes we made and this will help us to keep track

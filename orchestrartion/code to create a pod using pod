@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: coolman
+   labels:
+     app: duckapp
+spec:
+  containers:
+    - name: mysql
+      image: mysql
+
+
+  in above code pod name is coolman 
+the image we are creating is mysql
+pod name is coolman
+
+once code is created always save the file .yml formate bceause we are using ansible.

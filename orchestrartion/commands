@@ -1,0 +1,12 @@
+how to see number of pods in kubernets
+kubectl get pods
+
+how to create a pod
+kubectl run nutakki --image=postsql
+
+how to delete a pod
+kubectl delete pod nutakki
+
+
+  
+

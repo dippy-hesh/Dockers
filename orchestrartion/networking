@@ -1,0 +1,15 @@
+in docker each container has it own ip but in kubectl each pod has its own ip address. each pod has its own ip address.
+when kubernets are create we will create a internal ip set up
+all containers and pods can communicate each other should not have nat
+cisco vmware flannel cilium we use it to set up this private network
+pod wil have different ips once a pod is created and it has a new update then this pod is replaced with new pod and it will have new ip
+instead of establishing conect dirctlt we will keep a commonet called service and it has a perment ip address
+service is individual companent . service is created my manifest file. service dont have any container or pod it has only ip address
+request will come to service we have to forward to conatiner. service will update the ip adress of pods and deployment
+communication between two pods in Kubernetes can absolutely be done using a Service.
+
+cluster ip: this ip is given by controller  it is only used for internal cluster communication we can not communicate with exterinal.
+this is most secure. it is default.
+nodeport: ti uses cluster node ips for communication. it is used to expose our application outside. it uses worker node private and public ip
+it is used only for testing and development purpose.
+load balancer ip is proveded by cloud provider so that accessed over internet it is used mostly.
